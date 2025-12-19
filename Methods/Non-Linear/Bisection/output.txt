@@ -1,0 +1,15 @@
+Test Case 1:
+Polynomial: 1x^3 -6x^2 +11x^1 -6
+Interval: [0, 4]
+Tolerance: 0.0001
+Step size: 0.5
+Root = 1.00006 found in 13 iterations
+Root = 2.00006 found in 13 iterations
+Root = 2.99994 found in 13 iterations
+
+Test Case 2:
+Polynomial: 1x^2 +0x^1 +1
+Interval: [-5, 5]
+Tolerance: 0.0001
+Step size: 0.5
+No Solution found in the given interval
