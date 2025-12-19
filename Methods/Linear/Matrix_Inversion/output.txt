@@ -1,0 +1,28 @@
+Matrix Inversion Method
+=======================
+
+Problem 1
+----------------------------------------
+Determinant of A = -1.000000
+Matrix is INVERTIBLE
+Solution Type: UNIQUE SOLUTION
+Solution:
+x1 = 2.000000
+x2 = 3.000000
+x3 = -1.000000
+
+
+Problem 2
+----------------------------------------
+Determinant of A = 0.000000
+Matrix is NOT INVERTIBLE
+Solution Type: INFINITE SOLUTIONS
+
+
+Problem 3
+----------------------------------------
+Determinant of A = 0.000000
+Matrix is NOT INVERTIBLE
+Solution Type: NO SOLUTION
+
+
