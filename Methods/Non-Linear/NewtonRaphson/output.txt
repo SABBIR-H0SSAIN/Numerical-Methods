@@ -1,0 +1,16 @@
+Test case=1
+Polynomial: 1x^3 -6x^2 +11x^1 -6
+Search Interval: [-12, 12]
+Tolerance: 0.001
+
+Root found: 1
+Root found: 2
+Root found: 3
+
+Test case=2
+Polynomial: 1x^2 +0x^1 +1
+Search Interval: [-2, 2]
+Tolerance: 0.001
+
+No Solution found in the given interval
+
