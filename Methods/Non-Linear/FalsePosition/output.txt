@@ -1,0 +1,13 @@
+Test case=1
+Root=1.000000 in iterations=0
+Root=2.000000 in iterations=0
+Root=3.000000 in iterations=1
+Root=3.000000 in iterations=0
+
+Test case=2
+Root=3.000000 in iterations=1
+Root=3.000000 in iterations=0
+
+Test case=3
+Root=3.904161 in iterations=5
+
