@@ -1,0 +1,8 @@
+Test case 1: 
+Integration from range (0 to 3)
+Result : 1.20833
+
+Test case 2: 
+Integration from range (0 to 4)
+Result : 64
+
