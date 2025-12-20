@@ -1,0 +1,19 @@
+Test case=1
+Polynomial: 1x^3 -5x^2 +11x^1 -6
+Tolerance: 1e-005
+
+Root found: 0.777505
+
+Test case=2
+Polynomial: 1x^2 +0x^1 +1
+Tolerance: 1e-005
+
+No Solution found in the given interval
+
+Test case=3
+Polynomial: 1x^2 +6x^1 +1
+Tolerance: 1e-005
+
+Root found: -5.82843
+Root found: -0.171573
+
