@@ -1,0 +1,5 @@
+Linear Regression: y = a + bx
+n = 5
+a = 0.020000
+b = 2.000000
+For x = 6.000000, y = 12.020000
