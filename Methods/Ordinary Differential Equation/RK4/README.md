@@ -1,55 +1,32 @@
-# 🔢 Runge-Kutta 4th Order Method (RK4)
+# Runge-Kutta 4th Order Method (RK4)
 
-A powerful numerical method for solving ordinary differential equations with high accuracy.
+## Theory
 
----
-
-## 📖 Theory
-
-The **Runge-Kutta 4th Order (RK4)** method solves first-order ODEs of the form:
+The Runge-Kutta 4th Order method is a numerical technique for solving first-order ordinary differential equations of the form:
 
 $$\frac{dy}{dx} = f(x, y) \quad \text{with} \quad y(x_0) = y_0$$
 
-### How It Works
+The method computes four slopes at different points within each step:
 
-The method estimates the slope at **four strategic points** within each step:
+- $k_1$ is the slope at the beginning of the interval
+- $k_2$ is the slope at the midpoint, using $k_1$ to estimate $y$
+- $k_3$ is the slope at the midpoint, using $k_2$ to estimate $y$
+- $k_4$ is the slope at the end of the interval, using $k_3$ to estimate $y$
 
-| Slope | Location | Description |
-|:-----:|:---------|:------------|
-| $k_1$ | Beginning | Slope at $(x_n, y_n)$ |
-| $k_2$ | Midpoint | Slope using $k_1$ to estimate $y$ |
-| $k_3$ | Midpoint | Slope using $k_2$ to estimate $y$ |
-| $k_4$ | End | Slope using $k_3$ to estimate $y$ |
+The final value is calculated using a weighted average of these slopes with weights 1, 2, 2, and 1 respectively.
 
-These four slopes are combined using a **weighted average** (weights: 1, 2, 2, 1) to achieve 4th-order accuracy.
+## Formula
 
----
+Given step size $h$:
 
-## 📐 Formula
+$$k_1 = h \cdot f(x_n, y_n)$$
 
-### Step 1: Compute the Four Slopes
+$$k_2 = h \cdot f\left(x_n + \frac{h}{2}, y_n + \frac{k_1}{2}\right)$$
 
-$$\boxed{k_1 = h \cdot f(x_n, y_n)}$$
+$$k_3 = h \cdot f\left(x_n + \frac{h}{2}, y_n + \frac{k_2}{2}\right)$$
 
-$$\boxed{k_2 = h \cdot f\left(x_n + \frac{h}{2}, \ y_n + \frac{k_1}{2}\right)}$$
+$$k_4 = h \cdot f(x_n + h, y_n + k_3)$$
 
-$$\boxed{k_3 = h \cdot f\left(x_n + \frac{h}{2}, \ y_n + \frac{k_2}{2}\right)}$$
+$$y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
 
-$$\boxed{k_4 = h \cdot f(x_n + h, \ y_n + k_3)}$$
-
-### Step 2: Update Values
-
-$$\boxed{y_{n+1} = y_n + \frac{1}{6}\left(k_1 + 2k_2 + 2k_3 + k_4\right)}$$
-
-$$\boxed{x_{n+1} = x_n + h}$$
-
----
-
-## 📊 Accuracy
-
-| Error Type | Order |
-|:-----------|:-----:|
-| Local Truncation Error | $O(h^5)$ |
-| Global Error | $O(h^4)$ |
-
-> 💡 **Note:** Smaller step size $h$ leads to higher accuracy but requires more computation.
+$$x_{n+1} = x_n + h$$
