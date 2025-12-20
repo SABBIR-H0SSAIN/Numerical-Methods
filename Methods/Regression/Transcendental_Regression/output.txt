@@ -1,0 +1,5 @@
+Exponential Regression: y = a * e^(bx)
+n = 5
+a = 0.999102
+b = 1.000185
+For x = 6.000000, y = 404.052553
