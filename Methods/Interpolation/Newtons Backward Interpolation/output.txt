@@ -1,0 +1,7 @@
+Test case 1: 
+For x=4.5
+Result: 20.25
+
+Test case 2: 
+For x=3.5
+Result: 33.4124
