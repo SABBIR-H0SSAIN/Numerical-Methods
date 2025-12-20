@@ -1,0 +1,10 @@
+Test case 1: 
+For point x=1.5
+1st Derivative f'(x) = 3
+2nd Derivative f''(x) = 2
+
+Test case 2: 
+For point x=0.5
+1st Derivative f'(x) = 1.86167
+2nd Derivative f''(x) = 2.96542
+
