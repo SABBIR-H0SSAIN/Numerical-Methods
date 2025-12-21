@@ -1,0 +1,10 @@
+Test case 1: 
+For point x=4.5
+1st Derivative f'(x) = 9
+2nd Derivative f''(x) = 2
+
+Test case 2: 
+For point x=4
+1st Derivative f'(x) = 52.1858
+2nd Derivative f''(x) = 43.5742
+
