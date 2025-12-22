@@ -3597,4 +3597,14 @@ At x=1.000000, y=3.436502
 
 [⬆ Back to Table of Contents](#table-of-contents)
 
----
+
+## 👥 Authors
+
+- **Md. Sabbir Hossain** (Roll: 2207102)  
+  GitHub: https://github.com/SABBIR-H0SSAIN
+
+- **Md. Siam Kabir** (Roll: 2207106)  
+  GitHub: https://github.com/Siam-Kabir-23
+
+- **Md. Masumur Rahman Fokrul** (Roll: 2207114)  
+  GitHub: https://github.com/Masum1601
